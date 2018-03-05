@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interactive Computing | Assignment 04</title>
+
+    <script src="../p5/p5.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.sound.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <!-- custom CSS -->
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Bangers');
+    body{
+      padding: 0;
+      margin: 5%;
+      font-family: "Calibri";
+    }
+    h1{
+      font-family: 'Bangers', cursive;
+      font-size: 50px;
+    }
+    #game-section {
+      text-align: center;
+    }
+    #game {
+      padding: 2%;
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id = "container">
+      <h1> Whack-A-Mole! </h1>
+      <h1> Thor ft. Hela edition </h1>
+      <div id="ideas">
+        <h2> My design process: </h2>
+        <p> When I thought of the object 'hammer', the first person that came into my mind was the superhero character, Thor, from Avengers. His weapon is the epitome of hammer so I decided to do an Avenger version of Whack-A-Mole, where the user will use Thor's hammer to hit Hela (antagonist) and his brother, Loki, for extra points. Nevertheless, if the user accidentally whack captain America when he pops up, the user will lose 3 points. </p>
+      </div>
+      <div id="game-section">
+      <h1> Play now! </h1>
+        <!-- Display canvas / the game -->
+        <div id= "game"></div>
+      </div>
+    <div>
+  </body>
+</html>

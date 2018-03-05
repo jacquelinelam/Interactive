@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charaset="UTF-8">
+    <title>Interactive Computing | Assignment03</title>
+
+    <script src="../p5/p5.min.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.dom.min.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.dom.js" type="text/javascript"></script>
+    <script src="../p5/addons/p5.sound.min.js" type="text/javascript"></script>
+    <script src="sketch03.js" type="text/javascript"></script>
+
+    <!-- Custom CSS -->
+    <style type="text/css">
+      @import url('https://fonts.googleapis.com/css?family=Carter+One');
+      body {
+        padding: 0;
+        margin: 5%;
+        font-family:'Carter One', cursive;
+      }
+
+      p{
+         font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+      }
+
+      #game-section {
+        text-align: center;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id = "container">
+      <div id="game-section">
+        <h1>Hungry Monkey in the Jungle!</h1>
+        <!-- Display canvas / the game -->
+        <div id= "game"></div>
+
+        <!-- create HTML interfaces -->
+        <form>
+          <!-- range adjusted via a horizontal "slider" -->
+          <h3><strong>!CHEAT MODE: </strong> Adjust the monkey's speed to move faster!</h3>
+          <input type="range" id="range1" min="1" max="5" step="1" value="3" onchange="updateRange(this);" oninput="updateRange(this);">
+        </form>
+
+      </div>
+
+
+
+      <div id="documentation">
+        <hr>
+        <h2>Documentation</h2>
+        <h3>Open-Ended Game Design and Inspirations</h3>
+        <div id="doc01">
+          <h3>Design Process/ Inspirations for Open-Ended Game </h3>
+            <p>I started on my open-ended game assignment by brainstorming what kind of game I would like to make. I have been binging Planet Earth recently so I decided to design a jungle-themed game where the animal must collect as much food as it can. I like monkeys and bananas particularly, so I chose to use a monkey as my main character. Then, I brainstormed on how my game should be played, which included details of my starting screen, objective, obstacles, user interface, scoring, sound, etc.</p>
+          <img src="images/idea01.jpg" width="30%" height="" alt="photo of assignment mindmap">
+          <img src="images/idea02.jpg" width="" height="400px" alt="photo of hand-drawn wireframe">
+          <img src="images/idea03.png" width="30%" height="" alt="photo of monkey icons">
+
+        </div>
+
+        <div id="doc02">
+          <h3>Physical Interface Workshop</h3>
+          <p>My group created our own physical interface by connecting the Makey Makey controller to the computer as a keyboard. We used different methods to design creative physical interface to control the movement of our character in the game. These methods are made available by running conductive material (e.g. PlayDoh, and Graphite (handdrawn pencil marks) between an input port and the ground to complete a circuit and stimulate the key press. First, we used a PlayDoh molded interface to play Tetris. In the two videos, we used pencils (graphite) to construct our own controller: a hand-drawn interface, allowing the user to stimulate the keys to play Pac Man and the UFO game (from class exercises).</p>
+
+          <video width=" 30%" height="auto" controls>
+            <source src="video/workshop01.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <video width="30%" height="auto" controls>
+            <source src="video/workshop02.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+        </div> <!--close doc02-->
+
+    </div> <!--close container div tag-->
+  </body>
+</html>
